@@ -1,0 +1,104 @@
+body{
+	padding-top:0px;
+}
+
+.sidebar-nav{
+	padding:9px 0;
+}
+
+textarea {
+	width: 99%;
+	height:150px;
+}
+
+#main-content{
+	float:left;
+	position:relative;
+	left:0px;
+}
+
+/* DataTable Styles */
+div.dataTables_length label {
+    float: left;
+    text-align: left;
+}
+ 
+div.dataTables_length select {
+    width: 75px;
+}
+ 
+div.dataTables_filter label {
+    float: right;
+}
+ 
+div.dataTables_info {
+    padding-top: 8px;
+}
+ 
+div.dataTables_paginate {
+    float: right;
+    margin: 0;
+}
+ 
+table {
+/*    margin: 1em 0;*/
+	margin-bottom: 6px !important;
+    clear: both;
+}
+
+table.table thead .sorting,
+table.table thead .sorting_asc,
+table.table thead .sorting_desc,
+table.table thead .sorting_asc_disabled,
+table.table thead .sorting_desc_disabled {
+    cursor: pointer;
+    *cursor: hand;
+}
+ 
+table.table thead .sorting { background: url('images/sort_both.png') no-repeat center right; }
+table.table thead .sorting_asc { background: url('images/sort_asc.png') no-repeat center right; }
+table.table thead .sorting_desc { background: url('images/sort_desc.png') no-repeat center right; }
+ 
+table.table thead .sorting_asc_disabled { background: url('images/sort_asc_disabled.png') no-repeat center right; }
+table.table thead .sorting_desc_disabled { background: url('images/sort_desc_disabled.png') no-repeat center right; }
+
+.nav-box li a{
+    border: solid 1px white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #AAA;
+    background: #EFEFEF;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    float: left;
+    margin: 10px;
+}
+
+.nav-box li a:hover{
+    box-shadow: 0px 3px 10px #000;
+}
+
+.control-group label{
+    min-width: 15%;
+    display: inline-block;
+}
+/* Mouse Over Text */
+td.info{
+    position:relative; /*this is the key*/
+    color:#000;
+    text-decoration:none;
+  }
+
+td.info span{display: none}
+
+td.info:hover span{ /*display just on :hover state*/
+    display:block;
+    position:absolute;
+    top:-60px;
+    width:350%;
+    border:5px solid #0cf;
+    background-color:#cff; color:#000;
+    text-align: center;
+    padding:10px;
+    z-index: 9999;
+  }
