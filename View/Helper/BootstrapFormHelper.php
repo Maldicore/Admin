@@ -129,10 +129,10 @@ class BootstrapFormHelper extends FormHelper
     /**
      * Submit
      *
-     * @param $label string
+     * @param $caption string
      * @return string
      */
-    public function submit($label = null)
+    public function submit($caption = null, $options = array())
     {
         $options = array(
             'class' => 'btn btn-primary'
