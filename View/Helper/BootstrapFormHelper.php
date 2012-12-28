@@ -137,6 +137,6 @@ class BootstrapFormHelper extends FormHelper
         $options = array(
             'class' => 'btn btn-primary'
         );
-        return parent::submit($label, $options);
+        return parent::submit($caption, $options);
     }
 }
