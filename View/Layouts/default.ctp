@@ -26,7 +26,7 @@
         <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>        
         <?php //echo $this->Html->script('/Admin/js/advanced'); ?>
-        <?php echo $this->Html->script('/Admin/js/wysihtml5-0.3.0_rc2.min'); ?>
+        <?php echo $this->Html->script('/Admin/js/wysihtml5-0.3.0_rc2'); ?>
         <?php echo $this->Html->script('/Admin/js/bootstrap.min'); ?>
         <?php echo $this->Html->script('/Admin/js/bootstrap-wysihtml5-0.0.2'); ?>
         <?php echo $this->Html->script('/Admin/js/bootstrap-datepicker'); ?>

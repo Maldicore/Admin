@@ -135,6 +135,11 @@ $('.textarea').wysihtml5({
 		"color": false //Button to change color of font
 	});
 ```
+For the font color to work on the front end make sure to include the color style file wysiwyg-color.css in your front end.
+
+```php
+<?php echo $this->Html->css('/Admin/css/wysiwyg-color.css'); ?>
+```
 
 #### $upLoads
 

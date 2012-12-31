@@ -1,6 +1,8 @@
 !function($, wysi) {
     "use strict";
 
+    var csspath = (window.location.href).slice(0,(window.location.href).indexOf("admin"))+"Admin/css/";
+
     var tpl = {
         "font-styles": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
@@ -384,7 +386,7 @@
         events: {},
         parserRules: {
             classes: {
-                // (path_to_project/lib/css/wysiwyg-color.css)
+                // (path_to_plugin/css/wysiwyg-color.css)
                 "wysiwyg-color-silver" : 1,
                 "wysiwyg-color-gray" : 1,
                 "wysiwyg-color-white" : 1,
@@ -435,7 +437,7 @@
                 "div": 1
             }
         },
-        stylesheets: ["./lib/css/wysiwyg-color.css"], // (path_to_project/lib/css/wysiwyg-color.css)
+        stylesheets: [csspath+"wysiwyg-color.css"], // (path_to_plugin/css/wysiwyg-color.css)
         locale: "en"
     };
 
