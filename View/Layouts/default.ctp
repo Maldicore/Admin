@@ -19,8 +19,8 @@
         <meta charset="utf-8">
         <title><?php echo isset($pluralHumanName) ? str_replace('Admin ', '', $pluralHumanName) . ' - ' : '' ?><?php echo __('Admin'); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <?php echo $this->Html->css('/Admin/css/bootstrap-wysihtml5-0.0.2'); ?>
         <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+        <?php echo $this->Html->css('/Admin/css/bootstrap-wysihtml5-0.0.2'); ?>
         <?php echo $this->Html->css('/Admin/css/datepicker'); ?>
         <?php echo $this->Html->css('/Admin/css/styles'); ?>
         <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -28,7 +28,7 @@
         <?php //echo $this->Html->script('/Admin/js/advanced'); ?>
         <?php echo $this->Html->script('/Admin/js/wysihtml5-0.3.0_rc2.min'); ?>
         <?php echo $this->Html->script('/Admin/js/bootstrap.min'); ?>
-        <?php echo $this->Html->script('/Admin/js/bootstrap-wysihtml5-0.0.2.min'); ?>
+        <?php echo $this->Html->script('/Admin/js/bootstrap-wysihtml5-0.0.2'); ?>
         <?php echo $this->Html->script('/Admin/js/bootstrap-datepicker'); ?>
         <?php echo $this->Html->script('/Admin/js/jquery.dataTables'); ?>
         <?php echo $this->Html->script('/Admin/js/scripts'); ?>

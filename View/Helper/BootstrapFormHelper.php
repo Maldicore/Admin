@@ -96,7 +96,7 @@ class BootstrapFormHelper extends FormHelper
         if(!empty($Model->displayFieldTypes)){
             if (in_array($fieldKey, array_keys($Model->displayFieldTypes))){
                 if($Model->displayFieldTypes[$fieldKey] == 'wysihtml'){
-                    $type_val = array('class' => 'textarea');
+                    $type_val = array('class' => 'wysihtml');
                     $options = array_merge($type_val, $options);
                 }
                 if($Model->displayFieldTypes[$fieldKey] == 'file'){
