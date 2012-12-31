@@ -121,7 +121,7 @@ var $displayFieldTypes = array(
 
 wysihtml uses https://github.com/jhollingworth/bootstrap-wysihtml5 and the wysihtml5 is initialized inside /app/Plugin/Admin/webroot/js/script.js
 
-You can the toolbar of wysihtml5 inside script.js:
+You can change the toolbar features/buttons of wysihtml5 inside script.js:
 
 The defaults are:
 ```js
