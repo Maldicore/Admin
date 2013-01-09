@@ -78,6 +78,17 @@ class BootstrapFormHelper extends FormHelper
         $type = $this->_introspectModel($modelKey, 'fields', $fieldKey);
         $Model = ClassRegistry::init($modelKey);
 
+        foreach ($Model->belongsTo as $bgOptions) {
+            if($bgOptions['foreignKey']==$fieldKey){
+                $belongModel = new $bgOptions['className'];
+                $options['options'] = $belongModel->find('list',array(
+                        'conditions' => $bgOptions['conditions'],
+                        'fields' => $bgOptions['fields'],
+                        'order' => $bgOptions['order'],
+                    ));
+            }
+        }
+
         if($type['type'] == 'date'){
             $type_val = array('class' => 'datepicker', 'type'=>'text');
             $options = array_merge($type_val, $options);   
