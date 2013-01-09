@@ -150,7 +150,7 @@
                                         if(isset($displayFieldTypes[$_alias][$_field])){
                                             if($displayFieldTypes[$_alias][$_field] == 'image'){
                                                 if(!empty($f_value) && file_exists(WWW_ROOT.'img'.DS.$f_value)){
-                                                    debug($displayFieldTypes[$_alias][$_field]);
+                                                    echo $this->Html->image($f_value,array('width'=>150));
                                                 } else {
                                                     echo $f_value." (image not found)";
                                                 }
