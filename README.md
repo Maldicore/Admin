@@ -102,8 +102,6 @@ of display, that includes:
 
 The feature adds a class to the view field which is manipulated via javascript.
 
-REF: Feature implemented in BootstrapFormHelper.php
-
 example usage:
 ```php
 var $displayFieldTypes = array(
@@ -147,8 +145,6 @@ You can define a variable $uploads in any of the models to specify upload path.
 Variable accepts two arrays imgDir & itemDir, imgDir can only be a string and itemDir can be a string or an array.
 The array should hold the name of the table field name which has the folder name
 
-REF: File Upload feature implemented in AdminAppController.php
-
 example usage:
 ```php
 var $upLoads = array(
@@ -162,8 +158,6 @@ var $upLoads = array(
 You can define a variable $ignoreFieldList in any of the models to ignore fields from
 the list view. The list view can be huge at times with many unwanted fields, here you 
 can give a list of fields to be ignored from the list view
-
-REF: Ignore list implemented in AdminAppController.php
 
 example usage:
 ```php
@@ -186,8 +180,6 @@ inside model folder. The models are pursed from the application Model directory,
 some times you might have a model eg: a tableless model that you want to ignore.
 A list of models to be ignored can be defined in this variable $ignoreModelList
 
-REF: Ignore list implemented in AdminAppController.php
-
 example usage:
 ```php
 var $ignoreModelList = array(
@@ -205,8 +197,6 @@ All the files are stored in app/Plugin/Admin/webroot/img/admin_icons/ folder.
 If you do not specify an icon explicitly it will choose an icon from the folder 
 in folder listing order. You can place an icon/image of .png inside this folder 
 and explicitly define it in your model.
-
-REF: Admin Dashboard icons implemented in AdminAppController.php
 
 example usage
 ```php
