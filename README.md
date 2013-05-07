@@ -10,12 +10,17 @@ This plugin uses the cake scaffolding to create admin panel automagically!
 ## Installation
 
 1. Copy or clone plugin to ``app/Plugin/Admin``
-1. Enable the plugin in ``app/Config/bootstrap.php`` !make sure to enable bootstrap true
-
-example code:
+1. Enable the plugin in ``app/Config/bootstrap.php`` !make sure to enable bootstrap true.
+Example code:
 ```
 CakePlugin::load('Admin',array('bootstrap' => true));
 ```
+3. The plugin uses CakePHP's Session Component, so if you haven't already, make sure it's added to ``app/Controller/AppController.php``.
+Example code:
+```
+public $components = array('Session');
+```
+
 
 ## Database Tables
 
