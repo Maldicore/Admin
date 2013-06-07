@@ -209,21 +209,6 @@ var $adminSettings = array(
 		'icon' => 'blog',
 		);
 ```
-
-## TODO: FOR VERSION 2!
-
-- User password encrypt on create/edit/update (field type:password)
-- Datatable
-- ImageSize Specification in Model & Resize on upload
-- Create thumbnails of image uploads for admin display + del them on record delete + del on image replace
-
-## TODO: FOR VERSION 3!
-
-- UnitTests
-- Override default views (index, view, form / via app Views)
-- UI Tweaks and Design Changes for Appeal
-- Admin Themes
-
 ## Requirements
 
 PHP version: PHP 5.2+
@@ -234,20 +219,17 @@ CakePHP version: 2.1
 For support and feature request, please create an issue: 
 https://github.com/Maldicore/Admin/issues
 
+We are not actively using this plugin as most of our current project are done in Laravel
+Support and development will be limited to as and when need and respect to time available
+
 ## Contributing to this Plugin
 
-Please feel free to contribute to the plugin with new issues, requests, unit tests and code fixes or new features. If you want to contribute some code, create a feature branch and send us your pull request.
+Please feel free to contribute to the plugin with new issues, requests, unit tests and code fixes or new features.
+If you want to develop/manage this project drop us an email info@maldicore.com
+
+Good Luck!
 
 ## License
 Copyright 2012, Maldicore Group Pvt Ltd
 
 Licensed under The MIT License: http://www.opensource.org/licenses/mit-license.php
-Redistributions of files must retain the above copyright notice.
-
-## Copyright
-
-Copyright 2012
-Maldicore Group Pvt Ltd
-G. Reethimaage Aage
-Male', Republic of Maldives
-http://maldicore.com
