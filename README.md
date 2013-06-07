@@ -219,13 +219,15 @@ CakePHP version: 2.1
 For support and feature request, please create an issue: 
 https://github.com/Maldicore/Admin/issues
 
-We are not actively using this plugin as most of our current project are done in Laravel
-Support and development will be limited to as and when need and respect to time available
+We are not actively using this plugin as most of our current projects are done using Laravel.
+
+So support and development will be limited to as and when need and respect to time available.
 
 ## Contributing to this Plugin
 
 Please feel free to contribute to the plugin with new issues, requests, unit tests and code fixes or new features.
-If you want to develop/manage this project drop us an email info@maldicore.com
+
+If you want to develop, manage and continue supporting this plugin drop us an email info@maldicore.com
 
 Good Luck!
 
