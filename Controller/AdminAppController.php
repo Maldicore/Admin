@@ -24,7 +24,7 @@ class AdminAppController extends AppController
      * @var array
      */
     public $helpers = array(
-        'Form' => array(
+        'BSForm' => array(
             'className' => 'Admin.BootstrapForm'
         ),
         'Html',

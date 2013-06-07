@@ -110,7 +110,7 @@
                         <?php endforeach; ?>
                         <td><?php echo $this->Html->link(__d('cake', 'View'), array('plugin' => 'admin', 'action' => 'view', ${$singularVar}[$modelClass][$primaryKey]), array('class' => 'btn btn-info')); ?></td>
                         <td><?php echo $this->Html->link(__d('cake', 'Edit'), array('plugin' => 'admin', 'action' => 'edit', ${$singularVar}[$modelClass][$primaryKey]), array('class' => 'btn btn-warning')); ?></td>
-                        <td><?php echo $this->Form->postLink(__d('cake', 'Delete'), array('plugin' => 'admin', 'action' => 'delete', ${$singularVar}[$modelClass][$primaryKey]), array('class' => 'btn btn-danger'), __d('cake', 'Are you sure you want to delete %s %s?', $modelClass, ${$singularVar}[$modelClass][$primaryKey])); ?></td>
+                        <td><?php echo $this->BSForm->postLink(__d('cake', 'Delete'), array('plugin' => 'admin', 'action' => 'delete', ${$singularVar}[$modelClass][$primaryKey]), array('class' => 'btn btn-danger'), __d('cake', 'Are you sure you want to delete %s %s?', $modelClass, ${$singularVar}[$modelClass][$primaryKey])); ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

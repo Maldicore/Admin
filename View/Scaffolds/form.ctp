@@ -19,7 +19,7 @@
             <P class="nav-header"><?php echo __d('cake', 'Actions'); ?></P>
             <ul class="nav nav-tabs nav-stacked">
                 <?php if ($this->request->action != 'add'): ?>
-                    <li><?php echo $this->Form->postLink(__d('cake', 'Delete'), array('action' => 'delete', $this->Form->value($modelClass . '.' . $primaryKey)), null, __d('cake', 'Are you sure you want to delete #%s?', $this->Form->value($modelClass . '.' . $primaryKey))); ?></li>
+                    <li><?php echo $this->BSForm->postLink(__d('cake', 'Delete'), array('action' => 'delete', $this->BSForm->value($modelClass . '.' . $primaryKey)), null, __d('cake', 'Are you sure you want to delete #%s?', $this->BSForm->value($modelClass . '.' . $primaryKey))); ?></li>
                 <?php endif;?>
                 <li><?php echo $this->Html->link(__d('cake', 'List') . ' ' . str_replace('Admin ', '', $pluralHumanName), array('plugin' => 'admin', 'action' => 'index')); ?></li>
                 <?php $done = array(); ?>
@@ -37,8 +37,8 @@
     </div>
     <div class="span10">
         <?php echo $this->Session->flash(); ?>
-        <?php echo $this->Form->create($modelClass); ?>
-        <?php echo $this->Form->inputs($scaffoldFields, array('created', 'modified', 'updated')); ?>
-        <?php echo $this->Form->end(__d('cake', 'Save')); ?>
+        <?php echo $this->BSForm->create($modelClass); ?>
+        <?php echo $this->BSForm->inputs($scaffoldFields, array('created', 'modified', 'updated')); ?>
+        <?php echo $this->BSForm->end(__d('cake', 'Save')); ?>
     </div>
 </div>
