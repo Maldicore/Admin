@@ -98,7 +98,7 @@ class AdminAppController extends AppController
         }
         // Get association model displayfield types
         foreach ($Model->hasMany as $key => $value) {
-            $subModel = ClassRegistry::init($key);
+            $subModel = ClassRegistry::init($value['className']);
             $displayFieldTypes[$key] = $subModel->displayFieldTypes;
         }
         $ignoreFieldList = array();
