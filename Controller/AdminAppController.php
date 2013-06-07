@@ -118,7 +118,7 @@ class AdminAppController extends AppController
             $iconsInFolder[$key] = str_replace('.png', '', $value);
         }
         $Folder = new Folder(APP . 'Model');
-        $files = $Folder->find('.*', true);
+        $files = $Folder->find('.*\.php', true);
         $navbar = array();
         foreach ($files as $file) {
             if ($file !== 'AppModel.php') {
