@@ -19,12 +19,12 @@
         <meta charset="utf-8">
         <title><?php echo isset($pluralHumanName) ? str_replace('Admin ', '', $pluralHumanName) . ' - ' : '' ?><?php echo __('Admin'); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+        <?php echo $this->Html->css('/Admin/css/bootstrap.min'); ?>
         <?php echo $this->Html->css('/Admin/css/bootstrap-wysihtml5-0.0.2'); ?>
         <?php echo $this->Html->css('/Admin/css/datepicker'); ?>
         <?php echo $this->Html->css('/Admin/css/styles'); ?>
-        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>        
+        <?php echo $this->Html->css('/Admin/css/bootstrap-responsive.min'); ?>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>        
         <?php //echo $this->Html->script('/Admin/js/advanced'); ?>
         <?php echo $this->Html->script('/Admin/js/wysihtml5-0.3.0_rc2'); ?>
         <?php echo $this->Html->script('/Admin/js/bootstrap.min'); ?>
