@@ -30,10 +30,9 @@ class BootstrapFormHelper extends FormHelper
             $options['class'] = 'well';
         }
 
-        $modelKey = $this->model();
-        $Model = ClassRegistry::init($modelKey);
-        if(!empty($Model->displayFieldTypes[$modelKey])){
-            if(in_array('image', $Model->displayFieldTypes[$modelKey]) || in_array('file',$Model->displayFieldTypes[$modelKey])){
+        $Model = ClassRegistry::init($model);
+        if(!empty($Model->displayFieldTypes)){
+            if(in_array('image', $Model->displayFieldTypes) || in_array('file',$Model->displayFieldTypes)){
                     $type_val = array('type'=>'file');
                     $options = array_merge($type_val, $options);   
                 }
